@@ -1,0 +1,9 @@
+# Service to retrieve executed moves information
+# Returns a list of segment lengths and a list of angles
+# Also indicates rule breaks (same angles/lengths, wall contact, and line crossings)
+---
+float64[] segment_lengths     # List of segment lengths
+float64[] angles              # List of angles in radians
+bool same_angles_lengths      # True if there are same angles/lengths
+bool wall_contact             # True if there is wall contact
+bool line_crossings           # True if there are line crossings
